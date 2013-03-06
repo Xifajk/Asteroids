@@ -28,13 +28,9 @@ function Update () {
 	}
 	
 	//firing the laser
-	if (Input.GetKeyDown(KeyCode.Z)){
-		/*print(transform.rotation.eulerAngles.z);
-		
-		var rotation = Quaternion.identity;
-		rotation.eulerAngles = Vector3(transform.rotation.x,transform.rotation.y,transform.rotation.z+90);*/
-		
-		Instantiate(laserBeam, transform.position,transform.rotation);
+	if (Input.GetKey(KeyCode.Z)){
+	
+		Instantiate(laserBeam, transform.position, transform.rotation);
 	}
 	
 	//spaceship moves up and down

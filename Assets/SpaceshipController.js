@@ -28,7 +28,7 @@ function Update () {
 	}
 	
 	//firing the laser
-	if (Input.GetKey(KeyCode.Z)){
+	if (Input.GetKeyDown(KeyCode.Z)){
 	
 		Instantiate(laserBeam, transform.position, transform.rotation);
 	}
